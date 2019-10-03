@@ -39,7 +39,5 @@ form.addEventListener("submit", function(event) {
   // Get the values in as the arguments to the function
   // ToDo: Figure out how to dynamically call a function by name
   // form inputs have a property called value
-  output.textContent = calc.add(num1.value, num2.value, select.value);
-
-  console.log(num1.value, num2.value, select.value);
+  output.textContent = calc[select.value](num1.value, num2.value);
 });
